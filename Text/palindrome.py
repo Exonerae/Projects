@@ -2,7 +2,7 @@ import string
 
 def palindrome(text):
 	userinput = text
-	text = text.translate(string.maketrans(string.uppercase,string.lowercase), string.punctuation) # removes all punctuation
+	text = text.translate(string.maketrans(string.uppercase,string.lowercase), string.punctuation) # removes all punctuation and converts to lowercase for comparison
 	text = ''.join(text.split()) # removes whitespace
 	
 	if (text == text[::-1]):
